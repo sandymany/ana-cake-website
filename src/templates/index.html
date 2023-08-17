@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/styles.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/slidy.css')}}">
+<style>
+</style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ data['title']}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" lang="en" content="open source html and css template">
+<meta name="robots" content="index, follow">
+
+</head>
+<body>
+<div id="menu">
+<nav>
+<input type="checkbox" id="show-menu" role="button">
+<label for="show-menu" class="open"><span class="fa fa-bars"></span></label>
+<label for="show-menu" class="close"><span class="fa fa-times"></span></label>
+<ul id="topnav">  
+<li><a href="#aboutMe">{{data['aboutMeSubtitle']}}</a></li>
+<li><a href="#recepie">Mars torta</a></li>
+<li><a href="#contact">{{data['contactSubtitle']}}</a></li>
+
+<li>
+	<ul>
+	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	</ul>
+</li>
+</ul>
+</nav>
+</div>
+<div id="container">
+<div id="pageheader">
+<h1><i class="fa fa-birthday-cake" aria-hidden="true"></i>
+	{{ data['title']}}</h1>
+</div>
+
+<div class="section">
+<div class="pageitem">
+<div id="slider">
+<figure>
+<image id = "borderimg" src="{{url_for('static', filename='images/1.jpeg')}}">
+<image id = "borderimg" src="{{url_for('static', filename='images/2.jpeg')}}">
+<image id = "borderimg" src="{{url_for('static', filename='images/4.jpeg')}}">
+<image id = "borderimg" src="{{url_for('static', filename='images/3.jpeg')}}">
+
+</figure>
+</div>
+</div>
+</div>
+
+<div id="aboutMe" class="section" style="display: flex;
+flex-direction: row;
+flex-wrap: wrap;">
+		<div class = "sectionImgBox " 
+		style="display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1; align-items: center;">
+			<image width="350px" id = "borderimg" src="{{url_for('static', filename='images/2.jpeg')}}">
+		</div>
+
+		<div class="sectionTextBox " style="display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;">
+		<h2 id="aboutMe">{{ data['aboutMeSubtitle'] }}</h2>
+		<p class="contentText"> {{ data['aboutMeText']}} </p>		
+
+		</div>
+
+</div>
+
+<div id="recepie" class="section"></div>
+
+<div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+	<h2>{{ data['recepieSubtitle'] }}</h2>
+</div>
+
+<div class="section2">
+
+	<div class = "sectionTextBox " 
+		style="display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1; align-items: center;">
+
+		<h3 id="recepie">{{ data['recepieSubtitle1'] }}</h3>
+		<ul>
+			<li>
+				<h3>5 jaja</h3>
+			</li>
+			<li>
+				<h3>5 žlica hladne vode</h3>
+			</li>
+			<li>
+				<h3>5 žlica glatkog brašna</h3>
+			</li>
+			<li>
+				<h3>1/2 žličice praška za pecivo</h3>
+			</li>
+			<li>
+				<h3>1 žlica kakaa</h3>
+			</li>
+		</ul>
+	</div>
+
+	<div class = "sectionTextBox " 
+		style="display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1; align-items: center;">
+
+		<h3 id="recepie">{{ data['recepieSubtitle2'] }}</h3>
+		<ul>
+			<li>
+				<h3>200g šećera</h3>
+			</li>
+			<li>
+				<h3>50g maslaca</h3>
+			</li>
+			<li>
+				<h3>50ml vrhnja za šlag</h3>
+			</li>
+		</ul>
+	</div>
+
+	<div class = "sectionTextBox " 
+		style="display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1; align-items: center;">
+	
+	<h3 id="recepie">{{ data['recepieSubtitle3'] }}</h3>
+		<ul>
+			<li>
+				<h3>500 ml vrhnja za šlag</h3>
+			</li>
+			<li>
+				<h3>3 žlice nutelle</h3>
+			</li>
+			<li>
+				<h3>3 mars cokoladice</h3>
+			</li>
+			<li>
+				<h3>250g mascarponea</h3>
+			</li>
+		</ul>
+		
+	</div>
+
+</div>
+
+<div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+	<image height="400px" id = "borderimg" src="{{url_for('static', filename='images/6.jpeg')}}"></image>
+</div>
+<br/>
+
+
+<div class="section">
+	<div class="pageitem">
+
+	<h2 id="contact"><i class="fa fa-envelope-o"></i>    {{ data['contactSubtitle']}}</h2>
+
+	<span class="contentText" style="margin-left:10px;">ana.talan@gmail.com</span><br/>
+	<span class="contentText" style="margin-left:10px;">mob.: 099 4365 788</span><br/>
+	
+	</div>
+</div>
+
+
+<div class="section">
+<div id="credits">
+    <div class="col"><p> © Ana Talan 2023.</p></div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
