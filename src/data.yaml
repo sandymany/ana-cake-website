@@ -16,33 +16,4 @@ content:
 
   educationContent2: "Završila sam preddiplomski studij 2023. godine na FER-u te upisala diplomski studij računalnog inženjerstva."
 
-  skillsSubtitle: "Vještine"
-  skillsSubtitle1: "Tehničke vještine"
-  skillsContent1:
-    - Java, Dart: (dobro poznavanje principa objektno-orjentiranog programiranja)
-    - Python: Python (Flask, webScraping)
-    - C/C++: višedretveni rad, sinkronizacija
-    - SQL: Postgres, SQLite (poznavanje i korištenje baza podataka za složene upite)
-    - HTML i CSS: izrada jednostavnih web stranica poput ove
-    - JavaScript: JavaScript/TypeScript (osnovno znanje Expressa i Angulara)
-    - Mobile development: Android SDK, Flutter
-
-  skillsSubtitle2: "Ostale vještine"
-  skillsContent2:
-    - JSON, yaml, XML: rad s parsiranjem podataka
-    - Strani jezici: engleski, osnove njemačkog, osnove japanskog
-    - Vozačka dozvola: B kategorija
-    - Sviranje: violina, klavir
-    - Crtanje: anime
-  
-  projectsSubtitle: Projekti
-  Bugy: "Android aplikacija (client-server uz SQL bazu) 
-            koja pomaže entomolozima (znanstvenicima koji proučavaju kukce) 
-            i ostalim ljubiteljima kukaca. Korisnicima je omogućeno pretraživanje 
-            postojeće ogromne (11230 jedinki) baze, stvaranje vlastite kolekcije, 
-            dodavanje individualiziranog opisa svakom kukcu i mijenjanje postojećih 
-            informacija u bazi. Dodane su opcije poput slanja email obavijesti, promjena 
-            jezika (hrv, eng, njem, jap) i odjava sa prijavljenih uređaja.
-            Ostale pojedinosti možete pročitati na sljedećim linkovima:"
-
   contactSubtitle: Kontaktiraj me!
